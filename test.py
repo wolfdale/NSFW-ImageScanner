@@ -1,9 +1,7 @@
 from PIL import Image
 
 
-
 def main():
-        
         im=Image.open('abc.jpg')
         ycbcr_image = Image.new('RGB', im.size, 'black')
         ycbcr=convert_to_ycbcr(im)
@@ -14,11 +12,6 @@ def main():
                     pix[i, j] = tuple(map(int, ycbcr[i * im.size[1] + j]))
         
         ycbcr_image.save('nin.jpg')
-    #code fro function slow
-    #code for function fast
-
-
-
 
 #function to Convert rgb image to ycbcr 
 def convert_to_ycbcr(im):
