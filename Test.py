@@ -3,8 +3,8 @@ from PIL import Image
 THRESHOLD = 0.5
 
 def main():
-        im=Image.open('abc.jpg')
-        #ycbcr_image = Image.new('RGB', im.size, 'black')
+        im=Image.open('Input_Image.jpg')
+        ycbcr_image = Image.new('RGB', im.size, 'black')
         ycbcr=convert_to_ycbcr(im)
         '''
         pix=ycbcr_image.load()
