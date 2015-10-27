@@ -2,7 +2,7 @@ from PIL import Image
 
 
 def main():
-        im=Image.open('abc.jpg')
+        im=Image.open('Input_Image.jpg')
         ycbcr_image = Image.new('RGB', im.size, 'black')
         ycbcr=convert_to_ycbcr(im)
         
